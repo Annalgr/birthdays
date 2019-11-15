@@ -3,10 +3,10 @@
 from mypackage.birthdays import return_birthday
 import sys
 
-if len(sys.argv) > 1:
-    argument = sys.argv[1]
+if len(sys.argv) > 2:
+    argument = str(sys.argv[1] + ' ' + sys.argv[2])
 else:
-    print("Give me an argument to print")
+    print("Please, enter a valid name (Name Surname)")
     exit()
 
 return_birthday(argument)
